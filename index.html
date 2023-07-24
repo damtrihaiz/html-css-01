@@ -18,20 +18,22 @@
         <title>F8 Project 01</title>
     </head>
     <body>
-        <main>
+        <main id="home">
             <!-- header -->
             <header class="sticky-header">
                 <div class="content">
                     <nav class="navbar">
                         <!-- Logo -->
-                        <img src="./assets/img/logo.svg" alt="logo" />
+                        <a href="#home">
+                            <img src="./assets/img/logo.svg" alt="logo" />
+                        </a>
                         <!-- Navigation -->
                         <ul>
-                            <li><a href="#!">Home</a></li>
-                            <li><a href="#!">Features</a></li>
-                            <li><a href="#!">Services</a></li>
-                            <li><a href="#!">Resources</a></li>
-                            <li><a href="#!">Contact</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#service">Services</a></li>
+                            <li><a href="#feature">Features</a></li>
+                            <li><a href="#resource">Resources</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                         <!-- Action -->
                         <div class="actions">
@@ -115,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <div class="guides">
+            <div id="service" class="guides">
                 <div class="content">
                     <h2 class="sub-title">How its works?</h2>
                     <p class="desc">
@@ -178,7 +180,7 @@
                 </div>
             </div>
             <!-- Featured -->
-            <div class="feature">
+            <div id="feature" class="feature">
                 <div class="content">
                     <header>
                         <h2 class="sub-title">Featured Properties</h2>
@@ -314,7 +316,7 @@
                 </div>
             </div>
             <!-- Stats -->
-            <div class="stats">
+            <div id="resource" class="stats">
                 <div class="content">
                     <div class="row">
                         <div class="img-block">
@@ -486,7 +488,7 @@
                 </div>
             </div>
             <!-- Subscription -->
-            <div class="subscription">
+            <div id="contact" class="subscription">
                 <div class="content">
                     <div class="body">
                         <div class="info">
@@ -591,11 +593,13 @@
                         </div>
                     </div>
                     <div class="row-bottom">
-                        <img
-                            src="./assets/img/logo.svg"
-                            alt="Besnik."
-                            class="logo"
-                        />
+                        <a href="#home">
+                            <img
+                                src="./assets/img/logo.svg"
+                                alt="Besnik."
+                                class="logo"
+                            />
+                        </a>
                         <p class="copyright">
                             Copyright 2020.com, All rights reserved.
                         </p>
