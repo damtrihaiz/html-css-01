@@ -557,6 +557,19 @@ a {
     display: flex;
     gap: 16px;
 }
+.footer .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 29px;
+    height: 29px;
+    border-radius: 3px;
+    background: #f9f9f9;
+}
+
+.footer .social-link:hover {
+    background: #ebebeb;
+}
 
 .footer .row-bottom {
     display: flex;
