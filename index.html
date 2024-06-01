@@ -92,24 +92,38 @@
         <meta name="theme-color" content="#ffffff" />
         <!-- styles -->
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+
         <title>F8 Project 01</title>
     </head>
     <body>
-        <!-- header -->
+        <!--PC header -->
         <header class="sticky-header">
             <div class="content">
                 <nav class="navbar">
-                    <!-- Logoo -->
+                    <!-- Tablet/Mobile menu -->
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 448 512"
+                         fill="currentColor"
+                         >
+                         <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                        </svg>
+                    </label>
+                    <!-- Logo -->
                     <a href="#">
-                        <img src="./assets/img/logo.svg" alt="logo" />
+                        <img src="./assets/img/logo.svg" class="logo" alt="logo" />
                     </a>
                     <!-- Navigation-->
-                    <ul>
+                    <ul id="pc-nav">
                         <li><a href="#">Home</a></li>
                         <li><a href="#service">Services</a></li>
-                        <li><a href="#feature">Features</a></li>
-                        <li><a href="#resource">Resources</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                    <li><a href="#feature">Features</a></li>
+                    <li><a href="#resource">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="show-on-mobile separate"><a href="#!">Sign in</a></li>
+                    <li class="show-on-mobile"><a href="#!">Sign up</a></li>
+
                     </ul>
                     <!-- Action -->
                     <div class="actions">
@@ -119,8 +133,35 @@
                 </nav>
             </div>
         </header>
+        <!-- Tablet/mobile header -->
+        <header class="mobile-header">
+            <input 
+            type="checkbox" 
+            name="" 
+            id="menu-checkbox" 
+            class="menu-checkbox"
+            hidden/>
+            <!-- overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <!-- menu content -->
+            <div class="menu-drawer">
+                 <!-- Logo -->
+                 <a href="#">
+                    <img src="./assets/img/logo.svg" alt="logo" />
+                </a>
+                <!-- Navigation-->
+                <ul id="mobile-nav">
+                    <script>
+                        const pcNav=document.querySelector('#pc-nav')
+                        const mobileNav=document.querySelector('#mobile-nav')
+
+                        mobileNav.innerHTML = pcNav.innerHTML
+                    </script>
+                </ul>
+            </div>
+        </header>
         <!-- main -->
-        <main>
+        <main >
             <!-- Hero -->
             <div class="hero-wrap">
                 <div class="content">
