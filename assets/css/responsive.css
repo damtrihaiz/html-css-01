@@ -1,5 +1,5 @@
 /* PC */
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
     .mobile-header {
         display: none;
     }
@@ -8,8 +8,8 @@
     }
 }
 /* Tablet & Mobile*/
-@media screen and (max-width:991.98px) {
-    .navbar{
+@media screen and (max-width: 991.98px) {
+    .navbar {
         position: relative;
     }
 
@@ -17,9 +17,9 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
-    .navbar ul{
+    .navbar ul {
         display: none;
     }
 
@@ -46,13 +46,12 @@
         padding: 60px;
         transform: translateX(-100%);
         transition: 0.5s ease;
-
     }
 
     .menu-drawer ul {
         margin-top: 24px;
     }
-    
+
     .menu-drawer ul a {
         display: block;
         padding: 18px 0;
@@ -68,20 +67,42 @@
     .menu-checkbox:checked ~ .menu-drawer {
         transform: translateX(0);
     }
-    
+
+    .hero-wrap .image {
+        display: none;
+    }
+
+    .hero-wrap .info {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hero-wrap .desc {
+        width: 80%;
+        margin: 30px auto auto;
+    }
+
+    .client .images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feature .list {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 /* Tablet */
-@media screen and (min-width:768px) and (max-width:991.98px) {
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
     .show-on-mobile {
         display: none;
     }
 }
 /* Mobile */
-@media screen and (max-width:767.98px) {
+@media screen and (max-width: 767.98px) {
     .menu-drawer {
         inset: 0 25% 0 0;
         padding: 40px;
-
     }
     .navbar .actions {
         display: none;

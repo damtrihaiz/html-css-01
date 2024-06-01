@@ -61,7 +61,6 @@ a {
     z-index: 1;
 }
 
-
 .navbar {
     display: flex;
     align-items: center;
@@ -141,7 +140,7 @@ a {
 .hero-wrap .image {
     position: absolute;
     right: calc((100vw - 1110px) / 2 - 100px);
-    bottom: 0
+    bottom: 0;
 }
 
 /* ==========Client=============== */
@@ -215,12 +214,13 @@ a {
     line-height: 1.88; /* 187.5% */
 }
 .list-guide {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 70px;
+    gap: 70px;
     justify-content: center;
 }
 .item-guide {
-    margin: 0 70px;
     text-align: center;
 }
 .item-guide .title {
@@ -233,7 +233,7 @@ a {
 .item-guide .link {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     margin-top: 10px;
     color: #0689ff;
     font-size: 1.4rem;
@@ -290,7 +290,8 @@ a {
 }
 
 .feature .list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 70px;
 }
