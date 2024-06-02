@@ -540,7 +540,7 @@ a {
 }
 .footer .row-top {
     display: flex;
-    gap: 185px;
+    column-gap: 185px;
 }
 .footer .row-top .heading {
     color: #1c1c1d;
