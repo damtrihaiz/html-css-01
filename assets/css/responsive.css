@@ -141,6 +141,10 @@
 }
 /* Mobile */
 @media screen and (max-width: 767.98px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
     .menu-drawer {
         inset: 0 25% 0 0;
         padding: 40px;
@@ -151,5 +155,110 @@
 
     .menu-drawer .separate {
         border-top: 1.5px solid #ebebeb;
+    }
+
+    .hero-wrap {
+        height: calc(100vh - 80px);
+    }
+
+    .hero-wrap .title {
+        font-size: 5rem;
+        margin-top: 20px;
+    }
+
+    .hero-wrap .desc {
+        width: 100%;
+    }
+
+    .hero-wrap .cta {
+        margin-top: 80px;
+    }
+
+    .client .images {
+        row-gap: 20px;
+    }
+
+    .guides .desc {
+        width: 100%;
+    }
+
+    .list-guide {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .guide-cta .btn {
+        margin-top: 40px;
+    }
+
+    .feature {
+        margin-top: 0;
+    }
+
+    .feature .link {
+        display: none;
+    }
+
+    .feature .list {
+        grid-template-columns: 1fr;
+    }
+
+    .view-all {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    .stats .info .sub-title {
+        width: 100%;
+    }
+    .stats .info .desc {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .stats .img-block .image {
+        width: 100%;
+        border: 1px solid transparent;
+    }
+    .stats .img-block .trend {
+        border-radius: 0 0 12px 0;
+    }
+
+    .row.row-qty {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 60px;
+        padding: 0;
+    }
+
+    .subscription {
+        margin-top: 40px;
+    }
+
+    .subscription .body {
+        width: 100%;
+        height: auto;
+    }
+
+    .subscription .info {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .subscription .info .sub-title {
+        font-size: 2rem;
+    }
+
+    .subscription .info .desc {
+        font-size: 1.3rem;
+    }
+
+    .footer .row-top {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .row-bottom {
+        flex-direction: column;
+        row-gap: 20px;
     }
 }
